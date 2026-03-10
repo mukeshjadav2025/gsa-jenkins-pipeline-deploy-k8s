@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build Project') {
             steps {
-                git url: 'https://github.com/gayatri-sa/samplejava'
+                git url: 'https://github.com/mukeshjadav2025/gsa-jenkins-pipeline-deploy-k8s.git'
                 withMaven(maven: 'mvn3.6.1') {
                     sh 'mvn clean package'
                 }
