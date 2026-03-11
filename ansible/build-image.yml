@@ -9,7 +9,7 @@
   - name: Build New Docker Image
     docker_image:
       path: ./tomcat
-      name: gayatrisa/tomcat
+      name: mukeshjadav7696/gsa-jpdk
       tag: pipeline-{{BUILD_ID}}
     register: docker_build
   - debug:
