@@ -9,8 +9,8 @@
   - name: Build New Docker Image
     docker_image:
       path: ../tomcat
-      name: mukeshjadav7696/gsa_gjpdk_tomcat
+      name: gayatrisa/tomcat
       tag: pipeline-{{BUILD_ID}}
     register: docker_build
   - debug:
-      msg: "Docker Image Build Done: mukeshjadav7696/gsa_gjpdk_tomcat-{{BUILD_ID}}"
+      msg: "Docker Image Build Done: gayatrisa/tomcat:pipeline-{{BUILD_ID}}"
