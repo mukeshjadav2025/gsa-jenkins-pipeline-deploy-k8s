@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: gayatrisa/tomcat
+        image: mukeshjadav7696/gsa-jpdk:pipeline-31
         ports:
         - containerPort: 8080
 
