@@ -3,14 +3,14 @@ kind: Service
 metadata:
   name: simpleservice
 spec:
-  # type: NodePort
-  type: LoadBalancer
+  type: NodePort
+  #type: LoadBalancer
   selector:
     app: webserver
   ports:
     - port: 9200 # this is the service port
       targetPort: 8080 # this is the pod port (should match the container port of the Pod)
-      #nodePort: 31000 # this is the node port. If not specified then, a random port will be selected
+      nodePort: 32001 # this is the node port. If not specified then, a random port will be selected
 ---
 apiVersion: apps/v1
 kind: Deployment
