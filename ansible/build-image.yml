@@ -13,4 +13,4 @@
       tag: latest
     register: docker_build
   - debug:
-      msg: "Docker Image Build Done: mukeshjadav7696/gsa-jpdkt:latest}"
+      msg: "Docker Image Build Done: mukeshjadav7696/gsa-jpdkt:latest"
